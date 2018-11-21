@@ -1,0 +1,15 @@
+public class JTableSpecial {
+    public static void main(String[] agrs)
+    {
+        JFrame frame=new JFrame("Special Cars List");
+        frame.setSize(5000,2000);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        Container contentPane=frame.getContentPane();
+        Object[][] tableDate=new Object[15][8];
+
+        String[] name={"ID","Dealer ID","Start Date","End Date","Value","Brand","Body Type", "Description"};
+        JTable table=new JTable(tableDate,name);
+        contentPane.add(new JScrollPane(table));
+        frame.setVisible(true);
+    }
+}
